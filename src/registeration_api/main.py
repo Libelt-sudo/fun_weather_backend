@@ -5,10 +5,10 @@ from fastapi import FastAPI, Body, Depends, Path, HTTPException
 from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from database import init_db
-from schemas import SubscriberCreate, SubscriberResponse
-from models import Subscriber
-from dependencies import sessionDep
+from shared.database import init_db
+from api.schemas import SubscriberCreate, SubscriberResponse
+from shared.models import Subscriber
+from shared.dependencies import sessionDep
 
 
 @asynccontextmanager
