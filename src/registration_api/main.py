@@ -6,7 +6,7 @@ from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from shared.database import init_db
-from api.schemas import SubscriberCreate, SubscriberResponse
+from schemas import SubscriberCreate, SubscriberResponse
 from shared.models import Subscriber
 from shared.dependencies import sessionDep
 

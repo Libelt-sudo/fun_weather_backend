@@ -7,7 +7,7 @@ from alembic import context
 
 import os
 from dotenv import load_dotenv
-from shared.models import *
+from src.shared.models import *
 
 # this is the Alembic Config object, which provides
 # access to the values within the .ini file in use.
